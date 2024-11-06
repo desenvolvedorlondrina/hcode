@@ -33,7 +33,7 @@
           <p class="help-block text-danger"></p>
           <div class="control-group">
             <input type="hidden" id="login" name="login" value="{$user.login}" />
-            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required value="{function="getValue($user.email)"}" />
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" value="{function="getValue($user.email)"}" />
           </div>
           <p class="help-block text-danger"></p>
           <div class="control-group">
@@ -81,7 +81,7 @@
           </div>
           <p class="help-block text-danger"></p>
           <div class="control-group">
-            <input type="text" class="form-control" id="district" name="district" required placeholder="Bairro" value="{function="getValue($address.district)"}" />
+            <input type="text" class="form-control" id="district" name="district" placeholder="Bairro" value="{function="getValue($address.district)"}" />
           </div>
           <p class="help-block text-danger"></p>
           <div class="control-group">

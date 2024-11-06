@@ -323,7 +323,7 @@ class Address extends Model implements JsonSerializable
         $address->district = trim($arguments["district"] ?? "") ?: null;
         $address->complement = trim($arguments["complement"] ?? "");
         $address->reference = trim($arguments["reference"] ?? "") ?: null;
-        $address->zipCode = (int) (preg_replace("/\D/", "", $arguments["zipCode"] ?? "")) ?: null;
+        $address->zipCode = (int) (preg_replace("/\D/", "", $arguments["zipCode"] ?? "")) ?: 0;
         $address->dateRegister = $arguments["dateRegister"] ?? date("Y-m-d H:i:s");
         $address->dateLastChange = $arguments["dateLastChange"] ?? null;
 

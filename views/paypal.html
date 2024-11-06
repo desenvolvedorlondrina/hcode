@@ -25,7 +25,7 @@
     {/loop}
 
     <input name="currency_code" type="hidden" value="BRL" />
-    <input name="email" type="hidden" value="{$order.user.email}" />
+    <input name="email" type="hidden" value="{function="getValue($order.user.email)"}" />
 
     <input alt="PayPal - A forma mais segura e fácil de pagar online" name="submit" type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_buynow_LG.gif" />
   </form>
